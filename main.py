@@ -32,7 +32,7 @@ class Build:
 
 # --- Інтерфейс (View) ---
 def on_calculate():
-    try:
+   try:
         # Отримуємо дані з полів
         str_val = float(entry_str.get())
         crit_c_val = float(entry_crit_c.get())
@@ -50,8 +50,8 @@ def on_calculate():
         result = current_build.calculate_dps()
         label_result.config(text=f"DPS: {result}")
         
-    except ValueError:
-        messagebox.showerror("Помилка", "Будь ласка, введіть коректні числа!")
+   except ValueError:
+       messagebox.showerror("Помилка", "Будь ласка, введіть коректні числа!")
 
 # Налаштування вікна
 root = tk.Tk()
